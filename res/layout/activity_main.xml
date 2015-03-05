@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.simplewebbrowser.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/editUrl"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="10"
+            android:selectAllOnFocus="true"
+            android:text="@string/hello_world" />
+
+        <Button
+            android:id="@+id/buttonGo"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:text="@string/go" />
+    </LinearLayout>
+	<ProgressBar 
+	 	android:id="@+id/progressBar"
+	 	android:layout_height="0dp"	 	
+	    style="?android:attr/progressBarStyleHorizontal"
+	 	android:progress="20"
+	 	android:layout_weight="1"
+	 	android:layout_width="fill_parent"   
+	 />
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:text="@string/hello_world" />
+
+</LinearLayout>
